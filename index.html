@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--Differenza tra tag inline e block level
+    px: pixel, %: percentuale rispetto al tag contenitore
+    width e height riferiscono all'elemento, non al contenitore
+    margin: spazio esterno al bordo
+    box-sizing: border-box -> quando uso height e width, agiscono su padding e bordo, non solo sul contenuto
+    display: flex -> rende flessibile il contenuto all'interno del contenitore, poi agisco
+    con justify-content e align-items che agiscono sull'asse principale e secondario del contenuto
+-->
+
+<html>
+    <head>
+        <title>Todolist | Coding Week</title>
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <!--Intestazione-->
+        <header class="panel">
+            <h1>Todolist app</h1>
+            <img src="images" alt="Logo boolean">
+        </header>
+        <main>
+            <p class="empty-list-message">Sembra non ci siano attività</p>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <div class="todo-check">
+                        <img src="" alt="">
+                    </div>
+                    <p class="todo-text">Ascoltare Filippo</p>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-check">
+                        <img src="" alt="">
+                    </div>
+                    <p class="todo-text">Ascoltare Filippo</p>
+                </li>
+            </ul>
+            <div class="panel add-todo">
+                <input type="text" placeholder="Aggiungi attività">
+                <button>
+                    <img src="" alt="plus icon">
+                </button>
+            </div>
+        </main>
+    </div>
+    </body>
+</html>
