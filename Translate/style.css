@@ -1,0 +1,123 @@
+/*
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+h1{
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: lightcyan;
+    padding: 16px;
+    font-family: Madimi One, sans-serif;
+}
+
+.add-todo{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+} 
+
+.panel{
+    padding: 16px;
+    background-color: lightblue;
+    border-radius: 16px;
+}
+
+input{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+img {
+    width: 50px;
+    height: auto; /* Imposta un'altezza fissa per l'immagine */
+}
+
+button{
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(165, 42, 42, 0.585);
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.empty-list-message{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: white;
+    margin: 16px 0;
+    border-radius: 16px;
+}
+
+.translation{
+    background-color: bisque;
+    margin-bottom: 16px;
+}
+
+.translation-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+
+.translation-text{
+    font-size: 32px;
+}
+
+.translation-flag{
+    position: absolute;
+    font-size: 32px;
+}
+
+.text-input{
+    width: 100%;
+}
+
+.todo-text{
+    padding: 16px;
+}
+
+.todo-check{
+    cursor: pointer;
+    padding: 16px;
+    background-color: brown;
+    border-radius: 16px 0 0 16px;
+    cursor: pointer;
+}
