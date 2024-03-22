@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+        <header class="panel">
+            <h1>Weather</h1>
+            <img class="weather-icon" src="images/cloudy.png" alt="logo">
+        </header>
+        <main>
+            <div class="weather-info panel">
+                <input type="text" placeholder="Enter your location">
+                <button>Search</button>
+                <div  class="weather-location"></div>
+                <img src="images/plus.png" alt="" class="weather-icon">
+                <div class="weather-temperature"></div>
+            </div>
+            <div class="suggestion panel"></div>
+        </main>
+        <div class="not-found">
+            <img src="images/checklist.png" alt="Invalid location">
+            <p>Oops! Invalid location</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

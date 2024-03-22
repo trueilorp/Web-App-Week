@@ -1,5 +1,3 @@
-/*
-*/
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +10,7 @@
 }
 
 .panel{
-    background-color: aquamarine;
+    background-color: rgb(191, 243, 243);
     margin: 16px;
     padding: 16px;
     border-radius: 16px;
@@ -34,7 +32,8 @@ h1{
 }
 
 .weather-icon{
-    max-width: 90%;
+    height: 40px;
+    width: auto;
     transition: opacity 0.5s, translate 1s;
 }
 
@@ -56,19 +55,68 @@ h1{
     transition: scale 1s;
 }
 
+.logo-icon{
+    width: 40px;
+    height: auto;
+}
+
 main{
     text-align: center;
 }
 
-img{
-    max-width: 50%;
-    opacity: 50%;
-}
-
 body{
-    background-color: blue;
+    background-color: azure;
     padding: 16px;
     font-family: Madimi One, sans-serif;
+}
+
+input{
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    color: beige;
+    border-radius: 8px;
+}
+
+input::placeholder{
+    color: blueviolet;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 8px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.not-found{
+    display: none;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.fade-in{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to{
+        scale: 1;
+        opacity: 1;
+    }   
 }
 
 .js-loading{
